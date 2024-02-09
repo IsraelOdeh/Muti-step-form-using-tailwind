@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/dist/output.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <title>Multi Page Form</title>
+    </head>
+
+    <body class="bg-cLightgray font-Ubuntu relative font-normal">
+
+        <div
+            class="min-[768px]:flex  min-[768px]:bg-cWhite min-[768px]:relative min-[768px]:w-[90%] min-[768px]:mt-[80px] min-[768px]:p-[15px]     min-[768px]:max-w-[1000px] min-[768px]:mr-auto min-[768px]:ml-auto  rounded-md     ">
+            <img src="./assets/images/bg-sidebar-mobile.svg" class="min-[768px]:hidden w-full">
+            <img src="./assets/images/bg-sidebar-desktop.svg" class="min-[768px]:block hidden h-[465px]">
+
+            <div
+                class="w-[50%] left-[25%] top-[30px]  flex justify-between text-cWhite ml-auto mr-auto mb-[25px] min-[768px]:block absolute min-[768px]:w-auto  min-[768px]:left-[30px]">
+                <div class="min-[768px]:flex items-center min-[768px]:gap-[18px] min-[768px]:mb-[20px]">
+                    <span
+                        class="pagelabel  w-[30px] h-[30px] rounded-full  font-medium flex justify-center items-center border-solid border-[1px] border-cWhite min-[768px]:w-[40px] min-[768px]:h-[40px]">1</span>
+                    <div class=" hidden min-[768px]:block">
+                        <span class="block"> STEP 1 </span>
+                        <span class="block">YOUR INFO</span>
+                    </div>
+                </div>
+                <div class="min-[768px]:flex items-center min-[768px]:gap-[18px] min-[768px]:mb-[20px]">
+                    <span
+                        class="pagelabel  w-[30px] h-[30px] rounded-full  font-medium flex justify-center items-center border-solid border-[1px] border-cWhite min-[768px]:w-[40px] min-[768px]:h-[40px]">2</span>
+                    <div class=" hidden min-[768px]:block">
+                        <span class="block">STEP 2</span>
+                        <span class="block">SELECT PLAN</span>
+
+                    </div>
+                </div>
+
+                <div class="min-[768px]:flex items-center min-[768px]:gap-[18px] min-[768px]:mb-[20px]">
+                    <span
+                        class="pagelabel  w-[30px] h-[30px] rounded-full  font-medium flex justify-center items-center border-solid border-[1px] border-cWhite min-[768px]:w-[40px] min-[768px]:h-[40px]">3</span>
+                    <div class=" hidden min-[768px]:block">
+                        <span class="block"> STEP 3</span>
+                        <span class="block">ADD-ONS</span>
+                    </div>
+                </div>
+                <div class="min-[768px]:flex items-center min-[768px]:gap-[18px] min-[768px]:mb-[20px]">
+                    <span
+                        class="pagelabel  w-[30px] h-[30px] rounded-full  font-medium flex justify-center items-center border-solid border-[1px] border-cWhite min-[768px]:w-[40px] min-[768px]:h-[40px]">4</span>
+                    <div class=" hidden min-[768px]:block">
+                        <span class="block"> STEP 4</span>
+                        <span class="block">SUMMARY</span>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w-full min-[768px]:relative">
+                <main
+                    class="top-[100px] left-[5%]  w-[90%] absolute pb-[70px] min-[768px]:static min-[768px]:ml-auto min-[768px]:mr-auto">
+
+                    <form>
+
+
+
+
+
+
+
+
+                        <!-- Page 1 -->
+                        <section class=" hidden bg-cWhite ml-auto mr-auto  pt-[25px] px-[5%] rounded-[10px] pb-[25px]">
+                            <h1 class="font-bold text-cMarineblue text-[25px]">Personal info</h1>
+                            <span class="block text-[17px] text-cCoolgray">Please provide your name, email address, and
+                                phone
+                                number. </span>
+
+                            <div class="py-[5px]">
+                                <label class="block text-cMarineblue font-medium"> Name </label>
+                                <input name="Name" type="text" placeholder="e.g. Stephen King"
+                                    class="border-solid border-cLightgray h-[35px] border-[1px] w-full rounded-md pl-[15px]">
+                            </div>
+                            <div class="py-[5px]">
+                                <label class="block text-cMarineblue font-medium">Email Address </label>
+                                <input name="Email" placeholder="e.g. stephenking@lorem.com" type="text"
+                                    class="border-solid  border-cLightgray h-[35px] border-[1px] w-full rounded-md pl-[15px]">
+                            </div>
+                            <div class="py-[5px]">
+                                <label class="block text-cMarineblue font-medium"> Phone Number </label>
+                                <input name="Phone" placeholder="e.g. +1 234 567 890" type="number"
+                                    class="border-solid  border-cLightgray h-[35px] border-[1px] w-full rounded-md pl-[15px]">
+                            </div>
+
+                        </section>
+
+                        <!-- Page 2 -->
+                        <section class=" hidden bg-cWhite ml-auto mr-auto  pt-[25px] px-[5%] rounded-[10px] pb-[25px]">
+                            <h1 class="font-bold text-cMarineblue text-[25px]">Select your plan </h1>
+                            <span class="block text-[17px] text-cCoolgray">You have
+                                the option of monthly or yearly billing. </span>
+
+                            <div class="min-[768px]:flex min-[768px]:justify-between">
+                                <div name="plan"
+                                    class="py-[5px] flex border-solid border-cCoolgray border-[1px] rounded-md my-3 pl-[15px] gap-[15px] min-[768px]:block min-[768px]:w-[30%]"
+                                    onclick="choosePlan('Arcade');">
+                                    <img src="./assets/images/icon-arcade.svg" class="self-start h-[45px]">
+                                    <div class="min-[768px]:mt-[20px]">
+                                        <span class="block font-medium text-cMarineblue  text-[17px]"> Arcade </span>
+                                        <span class="price block"> $9/mo</span>
+                                        <span class="bonus hidden text-[13px]">2 months free</span>
+                                    </div>
+                                </div>
+                                <div name="plan"
+                                    class="py-[5px] flex border-solid border-cCoolgray   border-[1px] rounded-md my-3 pl-[15px] gap-[15px] min-[768px]:block min-[768px]:w-[30%]"
+                                    onclick="choosePlan('Advanced')">
+                                    <img src="./assets/images/icon-advanced.svg" class="self-start h-[45px]">
+                                    <div class="min-[768px]:mt-[20px]">
+                                        <span class="block font-medium text-cMarineblue text-[17px]"> Advanced </span>
+                                        <span class="price block"> $12/mo</span>
+                                        <span class="bonus hidden text-[13px]">2 months free</span>
+
+                                    </div>
+                                </div>
+                                <div name="plan"
+                                    class="py-[5px] flex border-solid border-cCoolgray border-[1px] rounded-md my-3 pl-[15px] gap-[15px] min-[768px]:block min-[768px]:w-[30%]"
+                                    onclick="choosePlan('Pro')">
+                                    <img src="./assets/images/icon-pro.svg" class="self-start h-[45px]">
+                                    <div class="min-[768px]:mt-[20px]">
+                                        <span class="block font-medium text-cMarineblue text-[17px]"> Pro</span>
+                                        <span class="price block"> $15/mo</span>
+                                        <span class="bonus hidden text-[13px]">2 months free</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-cLightgray  text-center py-[15px]">
+
+                                <span class="mx-3 text-sm font-medium text-gray-900 dark:text-gray-300">Monthly</span>
+
+                                <label class="relative inline-flex items-center cursor-pointer">
+                                    <input name="renewal" id="renewalInput" type="checkbox" value="Monthly"
+                                        class="sr-only peer">
+                                    <div class="w-[34px] h-[16px] bg-cMarineblue peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[1px] after:start-[2px] after:bg-cWhite after:border-gray-300 after:border after:rounded-full after:h-[14px] after:w-[15px] after:transition-all dark:border-gray-600 "
+                                        onclick="toggleValue()">
+                                    </div>
+                                </label>
+
+                                <span class=" mx-3 text-sm font-medium text-gray-900 dark:text-gray-300">Yearly</span>
+
+                            </div>
+
+                            <input type="hidden" id="planInput" name="plan" value="">
+
+
+                        </section>
+
+                        <!-- Page 3 -->
+                        <section class=" hidden bg-cWhite ml-auto mr-auto  pt-[25px] px-[5%] rounded-[10px] pb-[25px]">
+
+
+
+                            <h1 class="font-bold text-cMarineblue text-[25px]"> Pick add-ons</h1>
+                            <span class="block text-[17px] text-cCoolgray">Add-ons help enhance your gaming experience.
+                            </span>
+
+
+                            <div name="addon"
+                                class="py-[5px] flex border-solid border-cCoolgray border-[1px] rounded-md my-3 px-[15px]  justify-between">
+                                <div class=" flex gap-[15px]">
+                                    <input name="online_service" type="checkbox" class="self-center h-[20px] w-[20px]"
+                                        unchecked onclick="chooseAddon('online_service');">
+                                    <div>
+                                        <span class="block font-bold text-cMarineblue  text-[17px]"> Online
+                                            service</span>
+                                        <span class="block text-[13px] text-cCoolgray">Access to multiplayer
+                                            games</span>
+                                    </div>
+                                </div>
+                                <span name="addon_price" class="self-center text-cPurplishblue">+$1/mo </span>
+
+                            </div>
+
+                            <div name="addon"
+                                class="py-[5px] flex border-solid border-cCoolgray border-[1px] rounded-md my-3 px-[15px] justify-between">
+                                <div class="flex gap-[15px]">
+                                    <input name="larger_storage" type="checkbox" class="self-center h-[20px] w-[20px]"
+                                        onclick="chooseAddon('larger_storage');" unchecked>
+                                    <div>
+                                        <span class="block font-bold text-cMarineblue  text-[17px]">Larger
+                                            storage</span>
+                                        <span class="block text-[13px] text-cCoolgray">Extra 1TB of cloud save </span>
+                                    </div>
+                                </div>
+                                <span name="addon_price" class="self-center text-cPurplishblue">+$2/mo</span>
+
+                            </div>
+
+                            <div name="addon"
+                                class="py-[5px] flex border-solid border-cCoolgray border-[1px] rounded-md my-3 px-[15px] justify-between">
+                                <div class="flex  gap-[15px]">
+                                    <input name="customizable_profile" type="checkbox"
+                                        class="self-center h-[20px] w-[20px]"
+                                        onclick="chooseAddon('customizable_profile');" unchecked>
+                                    <div>
+                                        <span class="block font-bold text-cMarineblue  text-[17px]"> Customizable
+                                            Profile
+                                        </span>
+                                        <span class="block text-[13px] text-cCoolgray">Custom theme on your
+                                            profile </span>
+                                    </div>
+                                </div>
+                                <span name="addon_price" class="self-center text-cPurplishblue">+$2/mo</span>
+
+                            </div>
+
+                        </section>
+
+                        <!-- page 4 -->
+                        <section
+                            class=" hidden bg-cWhite w-[90%] ml-auto mr-auto  pt-[25px] px-[5%] rounded-[10px] pb-[25px]">
+
+                            <h1 class="font-bold text-cMarineblue text-[25px]">Finishing up</h1>
+                            <span class="block text-[17px] text-cCoolgray">Double-check everything looks OK before
+                                confirming.
+                            </span>
+
+                            <div class="bg-cLightgray px-[10px] py-[10px]">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <span id="selected_plan" name="selected_plan"
+                                            class="block text-cMarineblue font-bold"></span>
+                                        <span class="block underline text-cCoolgray font-medium">Change</span>
+                                    </div>
+                                    <span id="plan_price" name="plan_price"
+                                        class="text-cMarineblue font-bold items-center">$$$$</span>
+                                </div>
+                                <hr>
+                                <div id="checkout" name="checkout" class="font-medium">
+
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-between px-[10px]">
+                                <span name="total_text" id="total_text" class="text-cCoolgray font-medium">
+                                </span>
+                                <span name="total_price" id="total_price"
+                                    class="self-center text-cPurplishblue font-bold">
+                                </span>
+                            </div>
+
+                        </section>
+
+                        <!-- page 5 -->
+                        <section
+                            class=" hidden bg-cWhite ml-auto mr-auto  pt-[25px] px-[5%] rounded-[10px] pb-[25px] text-center">
+                            <img src="./assets/images/icon-thank-you.svg"
+                                class="mr-auto ml-auto w-[45px] mt-[30px] mb-[15px]">
+                            <h1 class="font-bold text-cMarineblue text-[25px]"> Thank you! </h1>
+                            <span class="block text-[13px] pb-[15px] text-cCoolgray">Thanks for confirming your
+                                subscription! We
+                                hope you
+                                have fun using our platform. If you
+                                ever need support, please feel free to email us at support@loremgaming.com</span>
+
+                        </section>
+
+
+
+                    </form>
+                </main>
+
+                <footer class="fixed bottom-0 bg-cWhite h-[50px] w-full min-[768px]:absolute">
+                    <button id="prevBtn"
+                        class=" h-[30px] left-[15px] absolute mt-[10px] px-[10px] text-cLightgray rounded-md hidden"
+                        onclick="prevOrNext('Previous')">Go Back
+                    </button>
+                    <button id="nxtBtn"
+                        class="bg-cMarineblue h-[30px] right-[15px] absolute mt-[10px] px-[10px] text-cLightgray rounded-md "
+                        onclick="prevOrNext('Next')">Next
+                        Step</button>
+                </footer>
+
+            </div>
+        </div>
+    </body>
+
+    <script>
+        let currentTab = 0; // Current tab is set to be the first tab (0)
+        let totalPrice = 0;
+        showTab(currentTab); // Display the current tab
+
+        function showTab(n) {
+            // This function will display the specified tab of the form ...
+            let x = document.getElementsByTagName("section");
+            // x[n].style.display = "block";
+            x[n].classList.toggle("hidden");
+
+            if (n !== 0) {
+                document.getElementById("prevBtn").classList.remove("hidden")
+            }
+            else {
+                document.getElementById("prevBtn").classList.add("hidden")
+            }
+
+
+            if (n === (x.length - 1)) {
+                document.getElementById("nxtBtn").classList.add("hidden")
+                document.getElementById("prevBtn").classList.add("hidden")
+
+            }
+            if (n === (x.length - 2)) {
+                document.getElementById("nxtBtn").innerText = "Confirm";
+            }
+            else {
+                document.getElementById("nxtBtn").innerText = "Next Step";
+
+            }
+
+            if (n < (x.length - 1)) {
+                pageLabel(n);
+            }
+        }
+
+        function pageLabel(n) {
+            let label = document.getElementsByClassName("pagelabel");
+
+
+            for (let index = 0; index < label.length; index++) {
+                const element = label[index];
+                if (index === n) {
+                    element.classList.add("bg-cLightblue");
+                    element.classList.add("text-cMarineblue");
+                }
+                else {
+                    element.classList.remove("bg-cLightblue");
+                    element.classList.remove("text-cMarineblue");
+                }
+            }
+
+
+        }
+
+        function prevOrNext(option) {
+            if (option === "Next" && !validateForm()) {
+                return false;
+            }
+
+            let x = document.getElementsByTagName("section");
+
+            x[currentTab].classList.add("hidden");
+
+            if (option === "Next") {
+                currentTab++;
+            }
+            if (option === "Previous") {
+                currentTab--
+            };
+
+
+            if (currentTab === 3) {
+                printCheckout()
+
+            }
+
+            if (currentTab === (x.length - 1)) {
+                //...the form gets submitted:
+                submit()
+            }
+            showTab(currentTab); // Display the current tab
+
+        }
+
+        function validateForm() {
+            let x, y, i, valid = true;
+            x = document.getElementsByTagName("section");
+            y = x[currentTab].getElementsByTagName("input");
+            // A loop that checks every input field in the current tab:
+            for (i = 0; i < y.length; i++) {
+                // If a field is empty...
+                if (y[i].value == "") {
+                    // add an "invalid" class to the field:
+                    y[i].classList.add("bg-cStrawberryred");
+                    // and set the current valid status to false:
+                    valid = false;
+                }
+            }
+            // // If the valid status is true, mark the step as finished and valid:
+            // if (valid) {
+            //     document.getElementsByClassName("step")[currentTab].className += " finish";
+            // }
+            return valid; // return the valid status
+        }
+
+        function toggleValue() {
+            let x = document.getElementById("renewalInput");
+            let status = x.checked;
+
+            if (status) {
+                x.value = "Monthly";
+            }
+            else {
+                x.value = "Yearly"
+            }
+            yearlyPage(status);
+        }
+
+        function yearlyPage(status) {
+            let bonusElements = document.getElementsByClassName("bonus");
+            let priceElements = document.getElementsByClassName("price");
+
+            // page 2
+            for (let index = 0; index < bonusElements.length; index++) {
+                if (status) {
+                    bonusElements[index].classList.add("hidden")
+
+                } else
+                    bonusElements[index].classList.remove("hidden")
+            }
+            for (let index = 0; index < priceElements.length; index++) {
+                if (!status) {
+                    if (index === 0) {
+                        priceElements[index].innerText = "$90/yr";
+                    }
+                    if (index === 1) {
+                        priceElements[index].innerText = "$120/yr";
+                    }
+                    if (index === 2) {
+                        priceElements[index].innerText = "$150/yr";
+                    }
+                }
+                else {
+                    if (index === 0) {
+                        priceElements[index].innerText = "$9/mo";
+                    }
+                    if (index === 1) {
+                        priceElements[index].innerText = "$12/mo";
+                    }
+                    if (index === 2) {
+                        priceElements[index].innerText = "$15/mo";
+                    }
+                }
+
+            }
+
+            // page 3
+            let addonPrice = document.getElementsByName("addon_price");
+            for (let index = 0; index < priceElements.length; index++) {
+                if (!status) {
+                    if (index === 0) {
+                        addonPrice[index].innerText = "+$10/yr";
+                    }
+                    if (index === 1) {
+                        addonPrice[index].innerText = "+$20/yr";
+                    }
+                    if (index === 2) {
+                        addonPrice[index].innerText = "+$20/yr";
+                    }
+                }
+                else {
+                    if (index === 0) {
+                        addonPrice[index].innerText = "+$1/mo";
+                    }
+                    if (index === 1) {
+                        addonPrice[index].innerText = "+$2/mo";
+                    }
+                    if (index === 2) {
+                        addonPrice[index].innerText = "+$2/mo";
+                    }
+                }
+            }
+        }
+
+        function choosePlan(plan) {
+            let target = event.target;
+            let planElements = document.getElementsByName("plan");
+            let planInput = document.getElementById("planInput");
+
+
+            for (let index = 0; index < planElements.length; index++) {
+                const element = planElements[index];
+
+                console.log(plan)
+                element.classList.remove("bg-cMagnolia")
+                element.classList.remove("border-cMarineblue");
+
+
+                if (plan === 'Arcade' && index === 0) {
+                    element.classList.add("bg-cMagnolia");
+                    element.classList.add("border-cMarineblue");
+                }
+                else if (plan === 'Advanced' && index === 1) {
+                    element.classList.add("bg-cMagnolia");
+                    element.classList.add("border-cMarineblue");
+                }
+                else if (plan === 'Pro' && index === 2) {
+                    element.classList.add("bg-cMagnolia");
+                    element.classList.add("border-cMarineblue");
+                }
+
+            }
+
+            planInput.value = plan;
+        }
+
+        function chooseAddon(addon) {
+            let addonElements = document.getElementsByName("addon")
+            let callerInput = event.target;
+            for (let index = 0; index < addonElements.length; index++) {
+                const element = addonElements[index];
+
+
+                if (callerInput.checked) {
+
+                    if (addon === 'online_service' && index === 0) {
+                        element.classList.add("bg-cMagnolia");
+                        element.classList.add("border-cMarineblue");
+                    }
+                    else if (addon === 'larger_storage' && index === 1) {
+                        element.classList.add("bg-cMagnolia");
+                        element.classList.add("border-cMarineblue");
+                    }
+                    else if (addon === 'customizable_profile' && index === 2) {
+                        element.classList.add("bg-cMagnolia");
+                        element.classList.add("border-cMarineblue");
+                    }
+                }
+                else {
+                    if (addon === 'online_service' && index === 0) {
+                        element.classList.remove("bg-cMagnolia");
+                        element.classList.remove("border-cMarineblue");
+                    }
+                    else if (addon === 'larger_storage' && index === 1) {
+                        element.classList.remove("bg-cMagnolia");
+                        element.classList.remove("border-cMarineblue");
+                    }
+                    else if (addon === 'customizable_profile' && index === 2) {
+                        element.classList.remove("bg-cMagnolia");
+                        element.classList.remove("border-cMarineblue");
+                    }
+                }
+
+            }
+        }
+
+        function printCheckout() {
+            totalPrice = 0;
+
+            let entries = document.getElementsByTagName("input")
+            let checkoutElement = document.getElementById("checkout")
+
+            let checkoutItem = document.getElementsByName("checkout_item")
+
+
+            while (checkoutElement.firstChild) {
+                checkoutElement.removeChild(checkoutElement.lastChild)
+
+            }
+
+            let renewal = (document.getElementsByName("renewal"))[0].value
+            console.log(renewal)
+
+            for (let index = 0; index < entries.length; index++) {
+                const element = entries[index];
+
+
+
+                if (element.name === "plan") {
+                    if (renewal === "Yearly") {
+                        document.getElementById("selected_plan").innerText = element.value + "(Yearly)";
+                        if (element.value === "Arcade") {
+                            document.getElementById("plan_price").innerText = "$90/yr";
+                            totalPrice += 90;
+                        }
+                        else if (element.value === "Advanced") {
+                            document.getElementById("plan_price").innerText = "$120/yr";
+                            totalPrice += 120
+                        }
+                        else if (element.value === "Pro") {
+                            document.getElementById("plan_price").innerText = "$150/yr";
+                            totalPrice += 150
+                        }
+                    }
+                    else {
+                        document.getElementById("selected_plan").innerText = element.value + "(Monthly)";
+                        if (element.value === "Arcade") {
+                            document.getElementById("plan_price").innerText = "$9/mo";
+                            totalPrice += 9;
+                        }
+                        else if (element.value === "Advanced") {
+                            document.getElementById("plan_price").innerText = "$12/mo";
+                            totalPrice += 12
+                        }
+                        else if (element.value === "Pro") {
+                            document.getElementById("plan_price").innerText = "$15/mo";
+                            totalPrice += 15
+                        }
+                    }
+                }
+
+                if (element.type === "checkbox" && element.name !== "renewal" && element.checked === true) {
+                    console.log(element.name + ";" + element.checked)
+
+
+                    let div = document.createElement("div");
+                    div.classList.add("flex", "justify-between");
+                    div.setAttribute("name", "checkout_item");
+
+
+                    let priceText = document.createElement("span")
+
+
+
+                    let addonText = document.createElement("span");
+                    addonText.classList.add("text-[14px]", "text-cCoolgray")
+
+
+
+                    if (renewal === "Monthly") {
+                        if (element.name === "online_service") {
+                            addonText.innerText = "Online Service";
+                            priceText.innerText = "+$1/mo";
+                            totalPrice += 1
+                        }
+                        else if (element.name === "larger_storage") {
+                            addonText.innerText = "Larger Storage";
+                            priceText.innerText = "+$2/mo";
+                            totalPrice += 2
+                        }
+                        else if (element.name === "customizable_profile") {
+                            addonText.innerText = "Customizable Profile";
+                            priceText.innerText = "+$2/mo";
+                            totalPrice += 2
+
+                        }
+                    }
+                    else {
+                        if (element.name === "online_service") {
+                            addonText.innerText = "Online Service";
+                            priceText.innerText = "+$10/yr";
+                            totalPrice += 10
+                        }
+                        else if (element.name === "larger_storage") {
+                            addonText.innerText = "Larger Storage";
+                            priceText.innerText = "+$20/yr";
+                            totalPrice += 20
+                        }
+                        else if (element.name === "customizable_profile") {
+                            addonText.innerText = "Customizable Profile";
+                            priceText.innerText = "+$20/yr";
+                            totalPrice += 20
+
+                        }
+                    }
+
+                    div.appendChild(addonText);
+                    div.appendChild(priceText);
+
+
+                    checkoutElement.appendChild(div)
+                    console.log(div)
+
+                }
+                else {
+                    console.log(element.name + ";" + element.value)
+
+                }
+
+
+                if (renewal === "Monthly") {
+                    document.getElementById("total_price").innerText = "$" + totalPrice + "/mo"
+                    document.getElementById("total_text").innerText = "Total(per month)"
+
+                }
+                else {
+                    document.getElementById("total_price").innerText = "$" + totalPrice + "/yr"
+                    document.getElementById("total_text").innerText = "Total(per year)"
+                }
+
+            }
+        }
+
+        function submit() {
+
+        }
+    </script>
+
+</html>
